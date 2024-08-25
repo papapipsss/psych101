@@ -14,13 +14,13 @@ export class HeadingComponent {
   getClass(HeadingType: string): string {
     switch (HeadingType) {
       case 'h1':
-        return 'font-sans text-5xl font-bold p-3';
+        return 'font-sans text-5xl font-bold';
       case 'h2':
-        return 'font-sans text-4xl font-bold p-3';
+        return 'font-sans text-4xl font-bold';
       case 'h3':
-        return 'font-sans text-3xl font-bold p-3';
+        return 'font-sans text-3xl font-bold';
       default:
-        return 'font-sans text-xl font-bold p-3';
+        return 'font-sans text-xl font-bold';
     }
   }
 }

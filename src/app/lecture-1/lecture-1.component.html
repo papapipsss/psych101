@@ -1,0 +1,46 @@
+<t-section>
+    <t-heading [HeadingType]="'h1'">Pagpapakilala sa Sikolohiya</t-heading>
+    <t-section>
+        <t-heading [HeadingType]="'h2'">Sikolohiya</t-heading>
+        <t-text>
+            Ito ang siyentipikong pag-aaral sa pagkilos, pag-iisip at mga karanasan ng tao. Ang <b>Affect, Behavior at Cognition</b> ang sumasalamin sa perspektibo ng sikolohiya.
+        </t-text>
+    </t-section>
+
+    <t-section>
+        <t-heading [HeadingType]="'h2'">Kasaysayan</t-heading>
+        <t-list>
+            <li>145 na taon palang mula noong maging hiwalay na disiplina ang sikolohiya</li>
+            <li>Noong 1879 itinatag ang kauna-unahang laboratoryo sa sikolohiya</li>
+        </t-list>
+    </t-section>
+</t-section>
+
+<t-section>
+    <t-heading [HeadingType]="'h1'">Pilosopikal at Pisyolohikal na Pinagmulan ng Sikolohiya</t-heading>
+    <t-text>
+        Tinatanong na noon ang "Ano ang malay-tao (consciousness)?", "Ang tao ba ay ipinanganak na rasyunal o irrasyunal?" at "Mayroon ba talaga tayong free will?"
+    </t-text>
+    <br>
+    <t-heading class="mt-10" [HeadingType]="'h2'">Mga katanungang pilosopikal na may kinalaman sa sikolohiya</t-heading>
+    <t-container>
+        <t-text-card (clicked)="openModal(0)">
+            <t-heading [HeadingType]="''">Iisa lang ba ang karanasang mental at pisikal? Panno sila nauugnay?</t-heading>
+        </t-text-card>
+        <t-text-card (clicked)="openModal(1)">
+            <t-heading [HeadingType]="''">Nagmumula ba ang ating kaalaman sa ating kakayahanag magrason o sa ating mga karanasan?</t-heading>
+        </t-text-card>
+        <t-text-card (clicked)="openModal(2)">
+            <t-heading [HeadingType]="''">Ano ang mas maimpluwensiya: minanang katangian o kapaligiran?</t-heading>
+        </t-text-card>
+        <t-text-card (clicked)="openModal(3)">
+            <t-heading [HeadingType]="''">Tayo ba ang pumipili ng ating ikinikilos at iniisip? O kumkilos at nag-iisip ba tayo ayon sa batas ng kalikasan?</t-heading>
+        </t-text-card>
+        <t-text-card (clicked)="openModal(4)">
+            <t-heading [HeadingType]="''">Paano pinakamainam na aralin ang ating pag-iral: sa Pamamagitan ng paghahati-hati sa ating karanasan dito o sa pagtingin dito nang buo?</t-heading>
+        </t-text-card>
+    </t-container>
+</t-section>
+
+<t-modal [isOpen]="isModalOpen" [modalTitle]="modalTitle" [modalContent]="modalContent" (close)="closeModal()">
+</t-modal>
