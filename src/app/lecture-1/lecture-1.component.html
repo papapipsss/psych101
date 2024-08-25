@@ -1,46 +1,168 @@
 <t-section>
-    <t-heading [HeadingType]="'h1'">Pagpapakilala sa Sikolohiya</t-heading>
-    <t-section>
-        <t-heading [HeadingType]="'h2'">Sikolohiya</t-heading>
-        <t-text>
-            Ito ang siyentipikong pag-aaral sa pagkilos, pag-iisip at mga karanasan ng tao. Ang <b>Affect, Behavior at Cognition</b> ang sumasalamin sa perspektibo ng sikolohiya.
-        </t-text>
-    </t-section>
+  <t-heading [HeadingType]="'h1'">Pagpapakilala sa Sikolohiya</t-heading>
+  <t-section>
+    <t-heading [HeadingType]="'h2'">Sikolohiya</t-heading>
+    <t-text>
+      Ito ang siyentipikong pag-aaral sa pagkilos, pag-iisip at mga karanasan ng
+      tao. Ang <b>Affect, Behavior at Cognition</b> ang sumasalamin sa
+      perspektibo ng sikolohiya.
+    </t-text>
+  </t-section>
 
-    <t-section>
-        <t-heading [HeadingType]="'h2'">Kasaysayan</t-heading>
-        <t-list>
-            <li>145 na taon palang mula noong maging hiwalay na disiplina ang sikolohiya</li>
-            <li>Noong 1879 itinatag ang kauna-unahang laboratoryo sa sikolohiya</li>
-        </t-list>
-    </t-section>
+  <t-section>
+    <t-heading [HeadingType]="'h2'">Kasaysayan</t-heading>
+    <t-list>
+      <li>
+        145 na taon palang mula noong maging hiwalay na disiplina ang sikolohiya
+      </li>
+      <li>Noong 1879 itinatag ang kauna-unahang laboratoryo sa sikolohiya</li>
+    </t-list>
+  </t-section>
 </t-section>
 
 <t-section>
-    <t-heading [HeadingType]="'h1'">Pilosopikal at Pisyolohikal na Pinagmulan ng Sikolohiya</t-heading>
+  <t-heading [HeadingType]="'h1'"
+    >Pilosopikal at Pisyolohikal na Pinagmulan ng Sikolohiya</t-heading
+  >
+  <t-section>
     <t-text>
-        Tinatanong na noon ang "Ano ang malay-tao (consciousness)?", "Ang tao ba ay ipinanganak na rasyunal o irrasyunal?" at "Mayroon ba talaga tayong free will?"
+      Tinatanong na noon ang "Ano ang malay-tao (consciousness)?", "Ang tao ba
+      ay ipinanganak na rasyunal o irrasyunal?" at "Mayroon ba talaga tayong
+      free will?"
     </t-text>
-    <br>
-    <t-heading class="mt-10" [HeadingType]="'h2'">Mga katanungang pilosopikal na may kinalaman sa sikolohiya</t-heading>
+    <br />
+    <t-heading class="mt-10" [HeadingType]="'h2'"
+      >Mga katanungang pilosopikal na may kinalaman sa sikolohiya</t-heading
+    >
     <t-container>
-        <t-text-card (clicked)="openModal(0)">
-            <t-heading [HeadingType]="''">Iisa lang ba ang karanasang mental at pisikal? Panno sila nauugnay?</t-heading>
-        </t-text-card>
-        <t-text-card (clicked)="openModal(1)">
-            <t-heading [HeadingType]="''">Nagmumula ba ang ating kaalaman sa ating kakayahanag magrason o sa ating mga karanasan?</t-heading>
-        </t-text-card>
-        <t-text-card (clicked)="openModal(2)">
-            <t-heading [HeadingType]="''">Ano ang mas maimpluwensiya: minanang katangian o kapaligiran?</t-heading>
-        </t-text-card>
-        <t-text-card (clicked)="openModal(3)">
-            <t-heading [HeadingType]="''">Tayo ba ang pumipili ng ating ikinikilos at iniisip? O kumkilos at nag-iisip ba tayo ayon sa batas ng kalikasan?</t-heading>
-        </t-text-card>
-        <t-text-card (clicked)="openModal(4)">
-            <t-heading [HeadingType]="''">Paano pinakamainam na aralin ang ating pag-iral: sa Pamamagitan ng paghahati-hati sa ating karanasan dito o sa pagtingin dito nang buo?</t-heading>
-        </t-text-card>
+      <t-text-card (clicked)="openModal(0)">
+        <t-heading [HeadingType]="''"
+          >Iisa lang ba ang karanasang mental at pisikal? Panno sila
+          nauugnay?</t-heading
+        >
+      </t-text-card>
+      <t-text-card (clicked)="openModal(1)">
+        <t-heading [HeadingType]="''"
+          >Nagmumula ba ang ating kaalaman sa ating kakayahanag magrason o sa
+          ating mga karanasan?</t-heading
+        >
+      </t-text-card>
+      <t-text-card (clicked)="openModal(2)">
+        <t-heading [HeadingType]="''"
+          >Ano ang mas maimpluwensiya: minanang katangian o
+          kapaligiran?</t-heading
+        >
+      </t-text-card>
+      <t-text-card (clicked)="openModal(3)">
+        <t-heading [HeadingType]="''"
+          >Tayo ba ang pumipili ng ating ikinikilos at iniisip? O kumkilos at
+          nag-iisip ba tayo ayon sa batas ng kalikasan?</t-heading
+        >
+      </t-text-card>
+      <t-text-card (clicked)="openModal(4)">
+        <t-heading [HeadingType]="''"
+          >Paano pinakamainam na aralin ang ating pag-iral: sa Pamamagitan ng
+          paghahati-hati sa ating karanasan dito o sa pagtingin dito nang
+          buo?</t-heading
+        >
+      </t-text-card>
     </t-container>
-</t-section>
 
-<t-modal [isOpen]="isModalOpen" [modalTitle]="modalTitle" [modalContent]="modalContent" (close)="closeModal()">
-</t-modal>
+    <t-modal
+      [isOpen]="isModalOpen"
+      [modalTitle]="modalTitle"
+      [modalContent]="modalContent"
+      (close)="closeModal()"
+    >
+    </t-modal>
+
+    <t-heading [HeadingType]="'h2'"
+      >Pag-uunlad sa kaalamang pisyolohikal
+    </t-heading>
+    <t-section>
+      <t-list>
+        <t-list>
+          <li>
+            Guillotine: kagamitang ginagamit sa pagpatay noong dulo ng 1700s
+            <t-list>
+              <li>
+                Nagtataka ang mga tao bakit gumagalaw pa rin ang katawan kahit
+                napugot na ang ulo. May malay pa kaya ang tao sapagkat gumagalaw
+                pa ang katawan?
+              </li>
+
+              <li>
+                Si Bischoff naman titingnan at susuriin nya ang ulo ng taong
+                napugutan sa pamamagitan ng mga tests. Tinitingnan if may reflex
+                pa ang ulo
+              </li>
+              <li>
+                Subalit, hindi talaga nagrespond yung ulo so nasa ulo ang malay
+                ng tao. Ang inaakalang paggalaw ng katawan ay tinuring na mga
+                involuntary movements matapos mamatay ang tao.
+              </li>
+            </t-list>
+          </li>
+        </t-list>
+      </t-list>
+    </t-section>
+    <t-section>
+      <t-heading [HeadingType]="'h3'">
+        Involuntary reflex at papel ng utak at spinal cord sa paggalaw
+      </t-heading>
+      <t-list>
+        <li>
+          <t-heading [HeadingType]="''">Hermann Von Helmholtz</t-heading>
+          <t-list>
+            <li>
+              Isang Aleman na pisyolohista. Pinag-aralan ang paningin at
+              pandinig at gumawa ng teorya kung paano ito gumagana
+            </li>
+            <li>
+              Nerve Impulse speed: pagsukat ng bilis ng dalay ng impormasyon;
+              reaction time
+            </li>
+          </t-list>
+        </li>
+        <li>
+          <t-heading [HeadingType]="''"
+            >Phrenology ni Franz Josef Gall</t-heading
+          >
+          <t-list>
+            <li>
+              Phrenology: may mga faculty na matatagpuan sa iba't ibang bahagi
+              ng utak ng tao. Dito nagmula ang interes ng functions ng bawat
+              bahagi ng utak.
+            </li>
+            <li>
+              Si Gall, pinapansin nya ang facial characteristics ng mga kaklase
+              nya at doon n'ya narealize nya na luwa-mata ang mga magaling
+              mag-memorize.
+            </li>
+            <li>
+              Kung ano ang malaking parte ng utak ng tao naiuugnay ito na ito
+              ang prominenteng characteristic ng tao. Subalit ito ay nadebunk
+              na. Nalaman na hindi ito makatotothanan pero may ilan pa rin ang
+              naniniwala rito.
+            </li>
+          </t-list>
+        </li>
+        <li>
+          <t-heading [HeadingType]="''">Ablation ni Pierre Flourens</t-heading>
+          <t-list>
+            <li>Ito ang nagdebunk sa Phrenology ni Gall</li>
+            <li>
+              Ablations: Kusang sinisira ang ilang bahagi ng utak na sinabi ng
+              phrenologist na may kinalaman sa partikular na gawain.
+            </li>
+            <li>
+              <strong
+                >Kung nasira ba ito, ito ba talaga yung maaapektuhan?</strong
+              >
+            </li>
+          </t-list>
+        </li>
+      </t-list>
+    </t-section>
+  </t-section>
+</t-section>
