@@ -1,4 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore Angular cache files
+.angular/cache/
+
+# Ignore TypeScript build info files
+*.tsbuildinfo
 
 # dependencies
 /node_modules

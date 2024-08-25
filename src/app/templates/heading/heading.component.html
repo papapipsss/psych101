@@ -1,0 +1,7 @@
+<div [ngSwitch]="HeadingType">
+  <ng-content>
+    <div [class]="getClass(HeadingType)">
+      <ng-content></ng-content>
+    </div>
+  </ng-content>
+</div>
