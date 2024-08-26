@@ -7,11 +7,12 @@ import { SectionComponent } from '../templates/section/section.component';
 import { ListComponent } from '../templates/list/list.component';
 import { TextCardComponent } from '../templates/text-card/text-card.component';
 import { ModalComponent } from '../templates/modal/modal.component';
+import { InfoCardComponent } from '../templates/info-card/info-card.component';
 
 @Component({
   selector: 'app-lecture-1',
   standalone: true,
-  imports: [HeadingComponent, TextComponent, CardComponent, ContainerComponent, ModalComponent, SectionComponent, ListComponent, TextCardComponent],
+  imports: [HeadingComponent, TextComponent, InfoCardComponent, CardComponent, ContainerComponent, ModalComponent, SectionComponent, ListComponent, TextCardComponent],
   templateUrl: './lecture-1.component.html',
   styleUrls: ['./lecture-1.component.css']
 })
